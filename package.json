@@ -1,0 +1,19 @@
+{
+  "name": "fixtix",
+  "version": "1.0.0",
+  "description": "This is a ticketing system app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscarvanegas34/FixTix.git"
+  },
+  "author": "Reme, John and Oscar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oscarvanegas34/FixTix/issues"
+  },
+  "homepage": "https://github.com/oscarvanegas34/FixTix#readme"
+}
