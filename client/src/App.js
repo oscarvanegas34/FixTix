@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar2 from '../src/components/NavBar/NavBar2';
 import NavBar1 from '../src/components/NavBar/NavBar1';
 // import logo from './logo.svg';
 import './App.css';
 import History from "./components/Cards/history"
+import Search from "./components/Cards/search"
 
 class App extends Component {
   render() {
@@ -12,7 +14,7 @@ class App extends Component {
         <NavBar1/>
         <NavBar2/>
         <History />
-
+        <Search />
 
       </div>
     );

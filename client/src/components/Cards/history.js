@@ -1,5 +1,7 @@
 import React from "react"
-
+import { Card, CardText, CardBody,
+    CardTitle, Button } from 'reactstrap';
+  
 
 
 
@@ -7,30 +9,21 @@ function History(){
 
 return (
 
-    <div style={{float: "right", marginRight: 150, marginTop: 45}}>
+    <div className="col-5" style={{float:"right"}}>
+      <Card>
+        <CardBody className="bg-secondary">
+        <CardTitle><h3 className="text-white"> History <Button>Reply</Button> <Button>Forward</Button></h3></CardTitle>
 
-    <h2 className="card">History</h2>
 
-   <div className="card" style={{padding: 20}}> 
 
-    <div className="card" style={{width: 300, marginTop: 35}}>
-        <div className="card-body">
-             <h4>Client</h4>
-             <p>bqdubqwudbquwbduqwbdu</p>
-        </div>
-    </div><div className="card" style={{width: 300, marginTop: 35}}>
-        <div className="card-body">
-             <h4>Support Manager</h4>
-             <p>bqdubqwudbquwbduqwbdu</p>
-        </div>
-    </div><div className="card" style={{width: 300, marginTop: 35}}>
-        <div className="card-body">
-             <h4>Notes</h4>
-             <p>bqdubqwudbquwbduqwbdu</p>
-        </div>
-    </div>
-
-</div>
+        <Card>
+         
+        <CardTitle><h5>Name</h5></CardTitle>
+          <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+        
+        </Card>
+    </CardBody>
+      </Card>
     </div>
 )
 }
