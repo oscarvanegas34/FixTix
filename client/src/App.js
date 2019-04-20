@@ -7,6 +7,9 @@ import './App.css';
 import History from "./components/Cards/history"
 import Search from "./components/Cards/search"
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import CreateTicketModal from '../src/components/Modals/CreateTicket/CreateTicketModal';
+
 class App extends Component {
   render() {
     return (
