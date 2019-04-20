@@ -1,6 +1,6 @@
 import React from "react"
 import { Card, CardText, CardBody,
-    CardTitle, Button } from 'reactstrap';
+    CardTitle, Button, Table } from 'reactstrap';
   
 
 
@@ -9,17 +9,32 @@ function History(){
 
 return (
 
-    <div className="col-5" style={{float:"right"}}>
-      <Card>
+    <div className="col-7" style={{float:"right"}}>
+      <Card  style={{marginRight: 30, height: 400}}>
         <CardBody className="bg-secondary">
-        <CardTitle><h3 className="text-white"> History <Button>Reply</Button> <Button>Forward</Button></h3></CardTitle>
 
+        <CardTitle>
+            
+            <h3 className="text-white"> History 
 
+        <Button  caret color="success" style={{float: "right"}}>Forward</Button> 
 
-        <Card>
+        <Button  classNAme="mr-2" caret color="primary" style={{float:"right", marginLeft: 400}}>Reply</Button>
+        </h3>
+        </CardTitle>
+
+        <Card style={{padding: 5}}>
          
-        <CardTitle><h5>Name</h5></CardTitle>
-          <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+         <Table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+       
+        </Table>
+          
         
         </Card>
     </CardBody>
