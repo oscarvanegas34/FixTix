@@ -7,11 +7,16 @@ import ForwardTicketModal from '../src/components/Modals/Forward/ForwardTicketMo
 
 // import logo from './logo.svg';
 import './App.css';
+
+// import ReplyForm from './components/Modals/Reply/ReplyForm'
+
 import History from "./components/Cards/history"
 import Search from "./components/Cards/search"
 
+
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CreateTicketModal from '../src/components/Modals/CreateTicket/CreateTicketModal';
+import ReplyModal from './components/Modals/Reply/ReplyModal';
+// import CreateTicketModal from '../src/components/Modals/CreateTicket/CreateTicketModal';
 
 class App extends Component {
   render() {
@@ -20,12 +25,16 @@ class App extends Component {
         <NavBar1/>
         <NavBar2/>
 
+        <ReplyModal/>
+
+
         
         <CreateUserModal/>
 
         <ForwardTicketModal/>
         
 
+master
 
 
 

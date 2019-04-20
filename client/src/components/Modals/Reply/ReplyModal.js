@@ -1,9 +1,9 @@
 import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import CreateTicketForm from './CreateTicketForm';
+import ReplyForm from '../Reply/ReplyForm'
 
 
-class CreateTicketModal extends React.Component {
+class ReplyModal extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -22,14 +22,14 @@ class CreateTicketModal extends React.Component {
   render() {
     return (
       <div>
-        <Button color="danger" onClick={this.toggle}>{this.props.buttonLabel}</Button>
+        <Button color="primary" onClick={this.toggle}>{this.props.buttonLabel}</Button>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-          <ModalHeader toggle={this.toggle}>Ticket Submission</ModalHeader>
+          <ModalHeader toggle={this.toggle}>Reply</ModalHeader>
           <ModalBody>
-            <CreateTicketForm />
+            <ReplyForm />
           </ModalBody>
           <ModalFooter>
-            <Button color="primary" onClick={this.toggle}>Submit</Button>{' '}
+            <Button color="info" onClick={this.toggle}>Send Reply</Button>{' '}
             <Button color="secondary" onClick={this.toggle}>Cancel</Button>
           </ModalFooter>
         </Modal>
@@ -38,4 +38,4 @@ class CreateTicketModal extends React.Component {
   }
 }
 
-export default CreateTicketModal;
+export default ReplyModal;
