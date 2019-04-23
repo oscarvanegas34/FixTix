@@ -24,7 +24,8 @@ class App extends Component {
       <div className="App">
         <NavBar1/>
         <NavBar2/>
-
+      <History />
+      <Search />
         <ReplyModal/>
 
 
