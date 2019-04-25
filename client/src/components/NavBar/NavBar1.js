@@ -1,20 +1,47 @@
-import React from "react";
-import './Style.css'
-// import { Link, BrowserRouter } from "react-router-dom";
+import React from 'react';
 
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  Button
+  } from 'reactstrap';
 
-// Depending on the current path, this component sets the "active" class on the appropriate navigation link item
-const NavBar1 = () => {
-    
-  return (
-    <nav className="navbar navbar-light bg-info">
-    <div className="navbar-brand">FIXTIX</div>
-    <form className="form-inline">
-      <button className="btn btn-success my-2 my-sm-0 mr-2" type="submit">Sign-In</button>
-      <button className="btn btn-secondary my-2 my-sm-0" type="submit">Reset Password</button>
-    </form>
-    </nav>
-  );
+export default class NavBar1 extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+  render() {
+    return (
+      <div>
+        <Navbar color="light"  light expand="md">
+          <NavbarBrand >FIXTIX </NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem className="mr-1">
+                <Button color="primary" size="sm">Sign-in</Button>{' '}                
+              </NavItem>
+              <NavItem>
+                <Button color="secondary" size="sm">Reset Password</Button>                
+              </NavItem>              
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
+    );
+  }
 }
-
-export default NavBar1;
